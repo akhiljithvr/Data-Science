@@ -1,0 +1,83 @@
+import java.math.BigDecimal;
+import java.text.*;
+import java.time.LocalDate;
+
+public class Vehicle {
+    private int yearOfManufacture;
+    private String mileage;
+    private boolean LowFloor;
+    private boolean Articulated;
+    private int AgeOfVehicle;
+
+    LocalDate currentdate =LocalDate.now();
+    int currentYear = currentdate.getYear();
+
+    private class Producer {
+        private String producer;
+
+        public String getProducer() {
+            return producer;
+        }
+        public void setProducer(String producer) {
+            this.producer = producer;
+        }
+
+    }
+
+    /*
+      Public getters and Setters
+    */
+    public String getMileage() {
+        return mileage;
+    }
+    public void setMileage(String mileage) {
+        this.mileage = mileage;
+    }
+    public dateyearOfManufacture() {
+        return yearOfManufacture;
+    }
+    public void setdom(Date yearOfManufacture) {
+        this.yearOfManufacture = yearOfManufacture;
+    }
+    public boolean getlowFloor() {
+        return lowFloor;
+    }
+    public void setlowFloor(boolean lowFloor) {
+        this.lowFloor = lowFloor;
+    }
+    public boolean getArticulated() {
+        return articulated;
+    }
+    public void setArticulated(boolean articulated) {
+        this.articulated = articulated;
+    }
+    public int getAgeOfVehicle(){
+        ageOfVehicle = currentYear - dom;
+        return ageOfVehicle;
+    }
+
+}
+
+public class Bus extends Vehicle{
+    private BigDecimal engineCapacity;
+
+    public BigDecimal getEngineCapacity() {
+        return engineCapacity;
+    }
+    public void setEngineCapacity(BigDecimal engineCapacity) {
+        this.engineCapacity = engineCapacity;
+    }
+
+    enum Fuel{
+        OIL,
+        NATURAL GAS,
+        ELECTRIC
+    }
+
+
+}
+
+public class Tram extends Vehicle{
+
+}
+
